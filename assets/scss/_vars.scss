@@ -1,0 +1,21 @@
+$primaryColor: #424242;
+$secondaryColor: #fff;
+$penting: #FBCC38;
+$pentingLighter: rgb(253, 211, 71);
+$h1size: 64px;
+$psize: 17px;
+$hp: 414px;
+$tablet: 768px;
+$laptop: 992px;
+
+@mixin layar($media) {
+  @if $media == hp {
+    @media only screen and (max-width: $hp) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: $tablet) { @content; }
+  }
+  @else if $media == laptop {
+    @media only screen and (max-width: $laptop) { @content; }
+  }
+}

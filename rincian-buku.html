@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rincian Buku | Dilan 1990</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+  <header class="container-fluid">
+    <a href="dashboard.html" class="btn-back">
+      <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0.659149 10.9393C0.0733624 11.5251 0.0733624 12.4749 0.659149 13.0607L10.2051 22.6066C10.7909 23.1924 11.7406 23.1924 12.3264 22.6066C12.9122 22.0208 12.9122 21.0711 12.3264 20.4853L3.84113 12L12.3264 3.51472C12.9122 2.92893 12.9122 1.97919 12.3264 1.3934C11.7406 0.807611 10.7909 0.807611 10.2051 1.3934L0.659149 10.9393ZM16.28 10.5L1.71981 10.5V13.5L16.28 13.5V10.5Z" fill="black"/>
+      </svg>
+    </a>
+    <div class="grup-edit">
+      <div class="edit panggil-modal">Edit</div>
+      <div class="delete modal-del">Delete</div>
+    </div>
+    <img src="./assets/img/dilan.jpg" alt="Sampul buku Dilan 1990">
+  </header>
+  <div class="container">
+    <div class="baris">
+      <div class="kolom artikel">
+        <div class="baris">
+          <div class="kolom">
+            <div class="lencana">Novel</div>
+            <div class="judul-buku">
+              <h2>Dilan 1990</h2>
+            </div>
+            <div class="waktu">
+              <p>30 Juni 2019</p>
+            </div>
+          </div>
+          <div class="kolom">
+            <p class="status">Available</p>
+          </div>
+        </div>
+        <div class="baris">
+          <p class="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur labore libero, natus iure nisi quidem nesciunt incidunt dolorem itaque vero eveniet eaque in quos doloribus laudantium assumenda ipsum, tempora fuga nobis harum ullam. Facere illo dignissimos rerum delectus, error tempora necessitatibus. Impedit reiciendis, eveniet excepturi aperiam consequuntur quos iusto sunt provident dolorum iure, nulla quaerat eum voluptates voluptatibus corporis laborum ullam nihil. Maxime deleniti explicabo soluta consequatur harum. Iure repellendus aliquam dolor facere adipisci voluptatum qui minima reiciendis ipsa, atque consequatur maxime temporibus, delectus dicta, earum tempora necessitatibus. Distinctio doloremque quos voluptate amet magni odit aliquid iure ratione repellendus sint!</p>
+        </div>
+      </div>
+      <div class="kolom aksi">
+        <div class="baris">
+          <img src="./assets/img/dilan-cover-book.png" alt="" class="sampul-buku">
+        </div>
+        <div class="baris">
+          <a href="#" class="btn-pinjam">Borrow</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Edit -->
+  <div class="bg-modal">
+    <div class="modal-content">
+      <button class="close"><img src="./assets/img/close.png" alt=""></button>
+      <div class="modal-container">
+        <h2>Edit Data</h2>
+        <form>
+          <div class="baris">
+            <div class="kolom-3">
+              <label for="urlImage">Url Image</label>
+            </div>
+            <div class="kolom-9">
+              <input type="text" id="urlImage">
+            </div>
+          </div>
+          <div class="baris">
+            <div class="kolom-3">
+              <label for="title">Title</label>
+            </div>
+            <div class="kolom-9">
+              <input type="text" id="title">
+            </div>
+          </div>
+          <div class="baris">
+            <div class="kolom-3">
+              <label for="description">Description</label>
+            </div>
+            <div class="kolom-9">
+              <textarea name="description" id="description" rows="4"></textarea>
+            </div>
+          </div>
+          <div class="baris">
+            <button class="btn-modal">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/sweetalert.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

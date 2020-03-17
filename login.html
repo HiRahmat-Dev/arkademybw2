@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body id="login">
+<!--
+* Kriteria Penilaian
+* 1.  Gunakan HTML5
+* 2.  Gunakan Flexbox / Grid
+* 3.  Eksternal CSS
+* 4.  Deploy di Netlify
+* 5.  Container Home gunakan bootstrap
+* 6.  Buat semirip mungkin sesuai desain Figma
+* 7.  Responsive
+-->
+<div class="container-fluid">
+  <div class="hero-auth">
+    <h1>Book is a window<br>to the world</h1>
+    <p>Photo by Mark Pan4ratte on Unsplash</p>
+  </div>
+  <div id="container-login">
+    <a class="logo" href="">
+      <img src="./assets/img/logo.png" alt="">
+    </a>
+    <h1>Login</h1>
+    <p>Welcome Back, Please Login<br>to Your Account</p>
+    <form>
+      <div class="grup-input">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="grup-input">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="baris">
+        <div class="grup-checkbox">
+          <input type="checkbox" id="remember" name="remember" >
+          <label for="remember">Remember me</label>
+        </div>
+        <a href="">Forgot Password</a>
+      </div>
+      <div class="grup-btn">
+        <a href="dashboard.html" class="btn btn-auth-primary">Login</a>
+        <a href="register.html" class="btn btn-auth-secondary">Register</a>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <p>By signing up, you agree to Book's <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a></p>
+  </footer>
+</div>
+</body>
+</html>

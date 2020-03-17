@@ -1,0 +1,213 @@
+/* 
+! DETAILS
+*/
+
+
+
+
+
+header.container-fluid {
+  a.btn-back {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 29px;
+    @include layar(tablet) {
+      left: 16px;
+    }
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.13);
+    transition: ease .2s;
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 6px rgba(0, 0, 0, 0.13);
+    }
+    &:active {
+      transform: translateY(2px);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+    }
+    svg {
+      margin-right: 2px;
+      align-self: center;
+    }
+  }
+  img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .grup-edit {
+    position: absolute;
+    top: 20px;
+    right: 36px;
+    display: flex;
+    .edit, .delete {
+      cursor: pointer;
+      font-size: 30px;
+      color: #fff;
+      text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.301);
+    }
+    .edit {
+      margin-right: 20px;
+    }
+  }
+}
+
+.container {
+  .baris {
+    justify-content: space-between;
+    @include layar(tablet) {
+      flex-direction: column;
+    }
+  }
+}
+
+.kolom.artikel {
+  padding-bottom: 80px;
+  width: 70%;
+  @include layar(tablet) {
+    width: 100%;
+  }
+  .baris {
+    &:first-child{
+      padding-bottom: 4vh;
+    }
+    @include layar(tablet) {
+      flex-direction: row;
+      padding-bottom: 8vh;
+    } 
+    @include layar(hp) {
+      flex-direction: column;
+    }
+    .kolom {
+      &:first-child {
+        @include layar(tablet) {
+          width: 40%
+        }
+        @include layar(hp) {
+          width: 100%
+        }
+      }
+    }
+    .kolom {
+      &:nth-child(2) {
+        p.status {
+          font-size: 30px;
+          font-weight: bold;
+          color: #99D815;
+        }
+        display: flex;
+        @include layar(tablet) {
+          width: 60%
+        }
+        @include layar(hp) {
+          justify-content: flex-start;
+          margin-top: 24px;
+          width: 100%
+        }
+        align-self: center;
+        justify-content: flex-end;
+      }
+    }
+  }
+  .lencana {
+    margin-top: 12px;
+    max-width: 90px;
+    padding: 6px 0;
+    font-size: $psize;
+    text-align: center;
+    background-color: $penting;
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .judul-buku {
+    margin-top: 4px;
+    font-weight: bold;
+    font-size: 50px;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+  .waktu {
+    margin-top: 12px;
+    color: black;
+    font-size: 20px;
+  }
+
+  .baris {
+    p.deskripsi {
+      margin-top: 20px;
+      @include layar(tablet) {
+        margin-top: 8px;
+      }
+      color: black;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+    }
+  }
+}
+
+.kolom.aksi {
+  margin-left: 42px;
+  width: 30%;
+  @include layar(tablet) {
+    width: 100%;
+    margin-left: 0;
+  }
+  .baris {
+    justify-content: flex-end;
+  }
+
+  img.sampul-buku {
+    @include layar(tablet) {
+      display: none;
+    }
+    margin-top: -160px;
+  }
+}
+.btn-pinjam {
+  margin-right: 14px;
+  @include layar(tablet) {
+    box-sizing: border-box;
+    margin-right: 0;
+    // margin-top: 80px;
+    position: fixed;
+    left: 5%;
+    right: 5%;
+    bottom: 2%;
+    width: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.13);
+  }
+  margin-top: 180px;
+  color: white;
+  background-color: $penting;
+  font-size: 30px;
+  width: 220px;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 10px;
+  transition: ease .2s;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.13);
+    background-color: $pentingLighter;
+  }
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+  }
+}
+
+
+
+
+/* 
+! END OF DETAILS
+*/
